@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "mdx"],
   output: "export",
+  basePath: process.env.GITHUB_ACTIONS ? "/Bao-Ve-Duc-Tin-Cong-Giao-Khi-Bi-Thach-Thuc" : undefined,
   images: {
     unoptimized: true,
   },
