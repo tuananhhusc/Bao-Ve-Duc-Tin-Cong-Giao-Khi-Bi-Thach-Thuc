@@ -2,10 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 export function getContentLastModified(): Date {
-  const root = process.cwd();
   const candidates = [
-    path.join(root, "thanhthuc.txt"),
-    path.join(root, "content", "thanhthuc.mdx"),
+    path.join(process.cwd(), "thanhthuc.txt"),
+    path.join(process.cwd(), "content", "thanhthuc.mdx"),
   ];
   let max = 0;
   for (const p of candidates) {
