@@ -3,6 +3,8 @@ import { ImageResponse } from "next/og";
 export const alt =
   "Biện giáo Công giáo đương đại: báo cáo phân tích chuyên sâu";
 
+export const dynamic = "force-static";
+
 export const size = { width: 1200, height: 630 };
 
 export const contentType = "image/png";
